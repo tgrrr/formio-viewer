@@ -13,7 +13,7 @@
             </div>
         </nav>
     </script>
-    <script id="srcform" type="text/template"><div class="well src-form"><div class="form-group"><label for="formsrc">Form Embed URL</label><input type="text" class="form-control" id="formsrc" name="formsrc" placeholder="https://examples.form.io/example"></div><button type="submit" class="btn btn-primary" id="setsrc"><span class="glyphicon glyphicon-check" id="btnicon"></span> Show Form</button></div></script>
+    <script id="srcform" type="text/templatfe"><div class="well src-form"><div class="form-group"><label for="formsrc">Form Embed URL</label><input type="text" class="form-control" id="formsrc" name="formsrc" placeholder="https://examples.form.io/example"></div><button type="submit" class="btn btn-primary" id="setsrc"><span class="glyphicon glyphicon-check" id="btnicon"></span> Show Form</button></div></script>
     <script id="loader" type="text/template"><div class="loader-wrapper"><div class="loader text-center"></div></div></script>
     <!-- <script src="lib/formiojs/formio.form.min.js"></script> -->
     <script src="https://cdn.form.io/formiojs/formio.full.min.js"></script>
@@ -231,6 +231,11 @@
           content: "";
           clear: both;
           display: table;
+      }
+
+      /* hide link to weather on pdf */
+      .formio-component-weatherLink {
+        display: none;
       }
     </style>
 </head>
